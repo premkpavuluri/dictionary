@@ -1,16 +1,16 @@
 const assert = require('assert');
 
 class Dictionary {
-  constructor(words) {
-    this.words = words;
+  constructor(entries) {
+    this.entries = entries;
   }
 
-  search(word) {
-    return this.words.find(set => set.word === word);
+  search(keyWord) {
+    return this.entries.find(entry => entry.word === keyWord);
   }
 
   startsWith(character) {
-    return this.words.filter(set => set.word.startsWith(character));
+    return this.entries.filter(entry => entry.word.startsWith(character));
   }
 
   equals(otherWords) {
