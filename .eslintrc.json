@@ -11,7 +11,7 @@
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": "latest"
   },
   "rules": {
     "indent": [
@@ -103,29 +103,6 @@
         "max-len": "warn",
         "no-magic-numbers": "off",
         "max-statements": "off"
-      }
-    },
-    {
-      "files": [
-        "head.js",
-        "tail.js"
-      ],
-      "rules": {
-        "no-console": "warn"
-      }
-    },
-    {
-      "files": [
-        "parseArguments.js",
-        "tailParser.js"
-      ],
-      "rules": {
-        "no-console": "off",
-        "max-statements": "off",
-        "complexity": [
-          "error",
-          5
-        ]
       }
     }
   ]
